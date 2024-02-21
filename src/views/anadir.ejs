@@ -1,0 +1,13 @@
+<%- include('partials/starthtml')%>
+    <%- include('partials/header-register')%>
+    <h1>Añadir</h1>
+    
+    <form method="post" action="/anadir">
+        <input type="text" name="titulo" placeholder="titulo">
+        <input type="text" name="descripcion" placeholder="descripcion">
+        <input type="text" name="imagen" placeholder="imagen">
+        <button type="submit">Añadir</button>
+    </form>
+    
+    <%- include('partials/footer')%>
+<%- include('partials/endhtml')%>

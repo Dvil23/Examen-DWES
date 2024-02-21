@@ -1,0 +1,14 @@
+<%- include('partials/starthtml')%>
+    <%- include('partials/header-register')%>
+    <h1>Login</h1>
+    <form method="post" action="/logearme">
+        <input type="text" name="mail" placeholder="Correo electronico">
+        <input type="text" name="password" placeholder="Contraseña">
+        <button type="submit">Logearme</button>
+    </form>
+    <form method="post" action="/registerredirect">
+        <button class="redirect" type="submit">¿No tienes cuenta?</button>
+    </form>
+    <p><%= myerror %></p>
+    <%- include('partials/footer')%>
+<%- include('partials/endhtml')%>

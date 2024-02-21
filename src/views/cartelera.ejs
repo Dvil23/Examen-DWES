@@ -1,0 +1,13 @@
+<%- include('partials/starthtml')%>
+    <%- include('partials/header-register')%>
+    <h1>Tus peliculas</h1>
+    <% for(let i=0;i<peliculas.length;i++){%>
+        <h1><%=peliculas[i].titulo%></h1>
+    <%}%>
+    
+    <form method="get" action="/anadir">
+        <button type="submit">Añadir</button>
+    </form>
+    
+    <%- include('partials/footer')%>
+<%- include('partials/endhtml')%>

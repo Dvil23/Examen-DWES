@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.redirect {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#principal {
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#mifooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #212122;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+#mifooter #izq-footer {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#mifooter #der-footer {
+  width: 45%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#header-register {
+  height: 10vh;
+  width: 100%;
+  background-color: #212122;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#header-register form button {
+  background: none;
+  border: none;
+  color: white;
+}
+#header-register #loginregister {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}/*# sourceMappingURL=style.css.map */

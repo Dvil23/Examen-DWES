@@ -1,0 +1,27 @@
+
+
+CREATE DATABASE IF NOT EXISTS movies;
+
+USE movies;
+
+CREATE TABLE IF NOT EXISTS informacion (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255),
+    descripcion VARCHAR(255),
+    imagen VARCHAR(255),
+    id_user INT,
+    FOREIGN KEY (id_user) REFERENCES users (id)
+);
+INSERT INTO informacion (titulo, descripcion, imagen,id_user) 
+VALUES ('Titanic', ' based on accounts of the sinking of RMS Titanic in 1912.Lovers of different social classes who fall in love during the ships maiden voyage.', 'https://img.fruugo.com/product/6/31/14366316_max.jpg',1),
+('Star Wars Clone Wars', 'galaxy-spanning conflict between the Galactic Republic and the Confederacy of Independent Systems, which had seceded from the Republic..', 'https://m.media-amazon.com/images/I/71syaYslsuS._AC_UF894,1000_QL80_.jpg',1),
+('Pepe', 'galaxy-spanning conflict between the Galactic Republic and the Confederacy of Independent Systems, which had seceded from the Republic..', 'https://m.media-amazon.com/images/I/71syaYslsuS._AC_UF894,1000_QL80_.jpg',1);
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    mail VARCHAR(255),
+    password VARCHAR(255)
+);
+INSERT INTO users (name, mail, password) 
+VALUES ('admin','admin@gmail.com', 'admin');

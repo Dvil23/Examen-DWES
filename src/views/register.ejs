@@ -1,0 +1,15 @@
+<%- include('partials/starthtml')%>
+    <%- include('partials/header-register')%>
+    <h1>Register</h1>
+    <form method="post" action="/registrarme">
+        <input type="text" name="name" placeholder="Nombre de usuario">
+        <input type="text" name="mail" placeholder="Correo electronico">
+        <input type="text" name="password" placeholder="Contraseña">
+        <button type="submit">Registrarme</button>
+    </form>
+    <form method="post" action="/loginredirect">
+        <button class="redirect" type="submit">¿Ya tienes cuenta?</button>
+    </form>
+    <p><%= myerror %></p>
+    <%- include('partials/footer')%>
+<%- include('partials/endhtml')%>

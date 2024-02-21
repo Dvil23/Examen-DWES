@@ -1,0 +1,12 @@
+<%- include('partials/starthtml')%>
+    <%- include('partials/header-register')%>
+    <img src="../public/images/movie-logo2.png" alt="">
+    <img src="../public/images/logo-movies.png" alt="">
+    <h1>Bienvenido <%= nombre %></h1>
+    <h3>Te has logeado <%= visitas %> veces</h3>
+    <form method="post" action="/carteleraredirect">
+        <button type="submit">Guarda tu colección</button>
+    </form>
+    
+    <%- include('partials/footer')%>
+<%- include('partials/endhtml')%>
